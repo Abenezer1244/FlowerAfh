@@ -38,9 +38,11 @@ export default function Navbar() {
 
         <Link
           href="/contact"
-          className="hidden sm:flex items-center gap-1 text-sm font-medium border-b border-brand-dark pb-0.5 hover:text-brand-accent hover:border-brand-accent transition-all"
+          className="flex items-center gap-1 text-sm font-medium border-b border-brand-dark pb-0.5 hover:text-brand-accent hover:border-brand-accent transition-all"
         >
-          SCHEDULE A TOUR{" "}
+          <span className="hidden sm:inline">SCHEDULE A TOUR</span>
+          <span className="sm:hidden">TOUR</span>
+          {" "}
           <iconify-icon
             icon="solar:arrow-right-up-linear"
             width="16"

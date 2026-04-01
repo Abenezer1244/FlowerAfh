@@ -70,22 +70,19 @@ export const EXPERTISE = [
 
 export const TESTIMONIALS = [
   {
-    quote: "Finding Flower Adult Family Home was a blessing. The staff treats my mother with such dignity and warmth, it truly feels like an extension of our own family rather than a facility.",
-    name: "Marcus V.",
-    role: "Son of Resident",
-    initial: "M",
+    quote: "The care team made my mother feel right at home from day one. The personal attention and warmth are unlike anything we found at larger facilities.",
+    attribution: "Family of Current Resident",
+    initial: "F",
   },
   {
-    quote: "The level of communication and medical attention provided is exceptional. Knowing my father is safe, eating well, and socializing has given us profound peace of mind.",
-    name: "Elena R.",
-    role: "Daughter of Resident",
-    initial: "E",
+    quote: "Knowing Dad is safe, well-fed, and genuinely happy gives our whole family peace of mind. The 24/7 availability means we never worry.",
+    attribution: "Family of Current Resident",
+    initial: "R",
   },
   {
-    quote: "From medication management to the beautiful, clean home environment, their commitment is absolute. We couldn't have asked for a better place for our aunt's recovery.",
-    name: "Sarah J.",
-    role: "Niece of Resident",
-    initial: "S",
+    quote: "The transition was handled so delicately. Within a week, Mom was smiling, participating in activities, and telling us she loves her new home.",
+    attribution: "Family of Current Resident",
+    initial: "T",
   },
 ];
 
@@ -188,34 +185,34 @@ export const ABOUT_MILESTONES = [
 ];
 
 export const GALLERY_IMAGES = [
-  { src: "https://i.ibb.co/s969MGyd/1c3c84141a33e0cced2283b645658d87-uncropped-scaled-within-1344-1008.webp", alt: "Senior Care 1" },
-  { src: "https://i.ibb.co/cKMgrBgP/3ef7a64d0ed08504da4b3024d11ed8c0-uncropped-scaled-within-1344-1008.webp", alt: "Senior Care 2" },
-  { src: "https://i.ibb.co/DDPqq0SP/7afa51fe0c3e318f09fe6b0cb799ca04-uncropped-scaled-within-1344-1008.webp", alt: "Senior Care 3" },
-  { src: "https://i.ibb.co/prndgr1y/7c6e8e85eebffa55d2bdcdbae9877f05-uncropped-scaled-within-1344-1008.webp", alt: "Senior Care 4" },
-  { src: "https://i.ibb.co/JwyWYTrd/7eba510eb53b95c3539a3274b10a1e87-uncropped-scaled-within-1344-1008.webp", alt: "Senior Care 5" },
-  { src: "https://i.ibb.co/VcB2C1j6/9c4c1db4ce6c4159633f27fd9259a39e-uncropped-scaled-within-1344-1008.webp", alt: "Senior Care 6" },
-  { src: "https://i.ibb.co/7xwZXtZ7/9ee9b50d5a03c530707b40ae10e1e5fd-uncropped-scaled-within-1344-1008.webp", alt: "Senior Care 7" },
-  { src: "https://i.ibb.co/j95N77wd/25ff525ad894d80b71ac19f0f87ebf1a-uncropped-scaled-within-1344-1008.webp", alt: "Senior Care 8" },
-  { src: "https://i.ibb.co/5XXcZ9GQ/36d354edd8bc5454dec3c721f38065be-uncropped-scaled-within-1344-1008.webp", alt: "Senior Care 9" },
-  { src: "https://i.ibb.co/nMX1kJnX/180-2nd-Ave-S-Edmonds-WA-98020-USA-Bathroom-IMGL0019-2-740x493.jpg", alt: "Senior Care 10" },
-  { src: "https://i.ibb.co/0RYPdtLb/180-2nd-Ave-S-Edmonds-WA-98020-USA-Bathroom-IMGL0022-2.jpg", alt: "Senior Care 11" },
-  { src: "https://i.ibb.co/C5MCKdKZ/180-2nd-Ave-S-Edmonds-WA-98020-USA-Bedroom-IMGL0025-2-2000x1333.jpg", alt: "Senior Care 12" },
-  { src: "https://i.ibb.co/F4qtN9vR/180-2nd-Ave-S-Edmonds-WA-98020-USA-Dining-room-IMGL0019-2000x1333.jpg", alt: "Senior Care 13" },
-  { src: "https://i.ibb.co/6JVy48L6/0664c71c16af7db24b96ead62f983742-uncropped-scaled-within-1344-1008.webp", alt: "Senior Care 14" },
-  { src: "https://i.ibb.co/rKSNFgxs/9980a06e3da7384cfb7990154b6e0fff-uncropped-scaled-within-1344-1008.webp", alt: "Senior Care 15" },
-  { src: "https://i.ibb.co/R4zqt1Qv/35148c286add27d447b3f47de8d63e36-uncropped-scaled-within-1344-1008.webp", alt: "Senior Care 16" },
-  { src: "https://i.ibb.co/7N6MRysd/229071-tiny.jpg", alt: "Senior Care 17" },
-  { src: "https://i.ibb.co/FqkykfVp/a75018ea2db14ad6a04df57fc1851daa-uncropped-scaled-within-1344-1008.webp", alt: "Senior Care 18" },
-  { src: "https://i.ibb.co/kVWkpWMy/bb05900f6d09d9a45e229bb4b123d884-uncropped-scaled-within-1344-1008.webp", alt: "Senior Care 19" },
-  { src: "https://i.ibb.co/gM9X7wp4/Blog-Company-News.png", alt: "Senior Care 20" },
-  { src: "https://i.ibb.co/4ZWVCtKm/c0ac88a48a0d4319319a25fc8be9071d-uncropped-scaled-within-1344-1008.webp", alt: "Senior Care 21" },
-  { src: "https://i.ibb.co/8D5hV51C/c009d933140daa0498fb9471134fe02a-uncropped-scaled-within-1344-1008.webp", alt: "Senior Care 22" },
-  { src: "https://i.ibb.co/N2tWbqTf/cb81fd5c76159a7fc851ff00d4cb799f-uncropped-scaled-within-1344-1008.webp", alt: "Senior Care 23" },
-  { src: "https://i.ibb.co/VcqdHKDB/dea4a7f20233bfa440ac8ed343980426-uncropped-scaled-within-1344-1008.webp", alt: "Senior Care 24" },
-  { src: "https://i.ibb.co/4wq736YX/engaging-games-for-seniors-1080x675.jpg", alt: "Senior Care 25" },
-  { src: "https://i.ibb.co/hRFN7nY1/gettyimages-1633393933-640x640.jpg", alt: "Senior Care 26" },
-  { src: "https://i.ibb.co/fd8tXxvH/istockphoto-638886566-612x612.jpg", alt: "Senior Care 27" },
-  { src: "https://i.ibb.co/XZtxZGTj/istockphoto-2163703602-612x612.jpg", alt: "Senior Care 28" },
+  { src: "https://i.ibb.co/s969MGyd/1c3c84141a33e0cced2283b645658d87-uncropped-scaled-within-1344-1008.webp", alt: "Comfortable bedroom with natural light" },
+  { src: "https://i.ibb.co/cKMgrBgP/3ef7a64d0ed08504da4b3024d11ed8c0-uncropped-scaled-within-1344-1008.webp", alt: "Cozy living area with warm decor" },
+  { src: "https://i.ibb.co/DDPqq0SP/7afa51fe0c3e318f09fe6b0cb799ca04-uncropped-scaled-within-1344-1008.webp", alt: "Bright common room with seating" },
+  { src: "https://i.ibb.co/prndgr1y/7c6e8e85eebffa55d2bdcdbae9877f05-uncropped-scaled-within-1344-1008.webp", alt: "Well-appointed private room" },
+  { src: "https://i.ibb.co/JwyWYTrd/7eba510eb53b95c3539a3274b10a1e87-uncropped-scaled-within-1344-1008.webp", alt: "Spacious living room view" },
+  { src: "https://i.ibb.co/VcB2C1j6/9c4c1db4ce6c4159633f27fd9259a39e-uncropped-scaled-within-1344-1008.webp", alt: "Clean modern bathroom" },
+  { src: "https://i.ibb.co/7xwZXtZ7/9ee9b50d5a03c530707b40ae10e1e5fd-uncropped-scaled-within-1344-1008.webp", alt: "Welcoming hallway and entrance" },
+  { src: "https://i.ibb.co/j95N77wd/25ff525ad894d80b71ac19f0f87ebf1a-uncropped-scaled-within-1344-1008.webp", alt: "Dining area set for meal" },
+  { src: "https://i.ibb.co/5XXcZ9GQ/36d354edd8bc5454dec3c721f38065be-uncropped-scaled-within-1344-1008.webp", alt: "Kitchen and dining space" },
+  { src: "https://i.ibb.co/nMX1kJnX/180-2nd-Ave-S-Edmonds-WA-98020-USA-Bathroom-IMGL0019-2-740x493.jpg", alt: "Accessible bathroom with safety features" },
+  { src: "https://i.ibb.co/0RYPdtLb/180-2nd-Ave-S-Edmonds-WA-98020-USA-Bathroom-IMGL0022-2.jpg", alt: "Modern bathroom with grab bars" },
+  { src: "https://i.ibb.co/C5MCKdKZ/180-2nd-Ave-S-Edmonds-WA-98020-USA-Bedroom-IMGL0025-2-2000x1333.jpg", alt: "Private bedroom with quality furnishings" },
+  { src: "https://i.ibb.co/F4qtN9vR/180-2nd-Ave-S-Edmonds-WA-98020-USA-Dining-room-IMGL0019-2000x1333.jpg", alt: "Elegant dining room set for family meal" },
+  { src: "https://i.ibb.co/6JVy48L6/0664c71c16af7db24b96ead62f983742-uncropped-scaled-within-1344-1008.webp", alt: "Warm living space with comfortable seating" },
+  { src: "https://i.ibb.co/rKSNFgxs/9980a06e3da7384cfb7990154b6e0fff-uncropped-scaled-within-1344-1008.webp", alt: "Bright room with garden view" },
+  { src: "https://i.ibb.co/R4zqt1Qv/35148c286add27d447b3f47de8d63e36-uncropped-scaled-within-1344-1008.webp", alt: "Cozy reading corner" },
+  { src: "https://i.ibb.co/7N6MRysd/229071-tiny.jpg", alt: "Beautiful home exterior with landscaping" },
+  { src: "https://i.ibb.co/FqkykfVp/a75018ea2db14ad6a04df57fc1851daa-uncropped-scaled-within-1344-1008.webp", alt: "Sunlit bedroom with fresh linens" },
+  { src: "https://i.ibb.co/kVWkpWMy/bb05900f6d09d9a45e229bb4b123d884-uncropped-scaled-within-1344-1008.webp", alt: "Inviting common area" },
+  { src: "https://i.ibb.co/gM9X7wp4/Blog-Company-News.png", alt: "Community activities and engagement" },
+  { src: "https://i.ibb.co/4ZWVCtKm/c0ac88a48a0d4319319a25fc8be9071d-uncropped-scaled-within-1344-1008.webp", alt: "Peaceful bedroom retreat" },
+  { src: "https://i.ibb.co/8D5hV51C/c009d933140daa0498fb9471134fe02a-uncropped-scaled-within-1344-1008.webp", alt: "Well-maintained living area" },
+  { src: "https://i.ibb.co/N2tWbqTf/cb81fd5c76159a7fc851ff00d4cb799f-uncropped-scaled-within-1344-1008.webp", alt: "Comfortable seating arrangement" },
+  { src: "https://i.ibb.co/VcqdHKDB/dea4a7f20233bfa440ac8ed343980426-uncropped-scaled-within-1344-1008.webp", alt: "Serene interior space" },
+  { src: "https://i.ibb.co/4wq736YX/engaging-games-for-seniors-1080x675.jpg", alt: "Seniors enjoying engaging games together" },
+  { src: "https://i.ibb.co/hRFN7nY1/gettyimages-1633393933-640x640.jpg", alt: "Caregiver sharing a warm moment with resident" },
+  { src: "https://i.ibb.co/fd8tXxvH/istockphoto-638886566-612x612.jpg", alt: "Compassionate one-on-one care" },
+  { src: "https://i.ibb.co/XZtxZGTj/istockphoto-2163703602-612x612.jpg", alt: "Joyful social interaction" },
 ];
 
 export const CARE_TYPE_OPTIONS = [
@@ -223,5 +220,76 @@ export const CARE_TYPE_OPTIONS = [
   { value: "assisted", label: "Assisted Living" },
   { value: "memory", label: "Memory Care" },
   { value: "respite", label: "Respite / Short-term Stay" },
+  { value: "palliative", label: "Palliative / Hospice Support" },
+  { value: "unsure", label: "I'm not sure yet" },
   { value: "other", label: "Other Inquiry" },
+];
+
+export const PAYMENT_METHODS = [
+  {
+    title: "Private Pay",
+    description: "Direct monthly payment for care services. We work with families to create a transparent, predictable billing structure.",
+    icon: "solar:wallet-linear",
+  },
+  {
+    title: "Medicaid / COPES",
+    description: "We accept Medicaid through Washington's Community Options Program Entry System (COPES) for eligible residents.",
+    icon: "solar:shield-check-linear",
+  },
+  {
+    title: "Long-Term Care Insurance",
+    description: "We coordinate directly with most long-term care insurance providers to simplify claims and billing.",
+    icon: "solar:document-linear",
+  },
+  {
+    title: "VA Benefits",
+    description: "Veterans and surviving spouses may qualify for Aid & Attendance benefits. We can help guide you through the process.",
+    icon: "solar:star-linear",
+  },
+];
+
+export const ADMISSION_STEPS = [
+  {
+    number: "01",
+    title: "Initial Inquiry",
+    description: "Call us or fill out our contact form. We'll have a friendly conversation about your loved one's needs, answer your questions, and schedule a tour.",
+  },
+  {
+    number: "02",
+    title: "Tour Our Home",
+    description: "Visit in person to see the living spaces, meet our care team, and get a feel for daily life. We encourage bringing your loved one along.",
+  },
+  {
+    number: "03",
+    title: "Care Assessment",
+    description: "Our care director conducts a thorough evaluation — medical history, daily living needs, dietary preferences, and social interests — to create a personalized care plan.",
+  },
+  {
+    number: "04",
+    title: "Move-In Day",
+    description: "We help coordinate a smooth transition. The room is prepared with personal touches, and our team focuses on building comfort and trust from the first moment.",
+  },
+];
+
+export const CARE_LEVELS = [
+  "Assistance with daily living activities (bathing, dressing, grooming)",
+  "Medication management and administration",
+  "Memory care for early to mid-stage dementia and Alzheimer's",
+  "Mobility assistance and fall prevention",
+  "Post-surgical and post-hospitalization recovery",
+  "Respite care (short-term stays)",
+  "Palliative and comfort care",
+  "Diabetic care and monitoring",
+];
+
+export const INCLUDED_IN_CARE = [
+  "Private furnished bedroom",
+  "Three home-cooked meals daily plus snacks",
+  "24/7 caregiver availability",
+  "Medication management",
+  "Personal care assistance",
+  "Housekeeping and laundry",
+  "Social activities and engagement",
+  "Transportation to medical appointments",
+  "All utilities and Wi-Fi",
 ];

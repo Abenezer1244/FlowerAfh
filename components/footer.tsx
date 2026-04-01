@@ -18,12 +18,15 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center text-xs text-brand-muted-dark font-normal gap-6 pt-4">
           <div className="flex flex-col gap-1 text-center md:text-left">
-            <span>ALL RIGHTS RETAINED.</span>
+            <span>ALL RIGHTS RESERVED.</span>
             <span>&copy;2024 FLOWER ADULT FAMILY HOME LLC</span>
           </div>
           <div className="text-center flex flex-col gap-1">
             <span>{SITE.addressLine1}</span>
             <span>{SITE.addressLine2}</span>
+            <a href={`tel:${SITE.phone1.replace(/[^+\d]/g, "")}`} className="hover:text-brand-bg transition-colors mt-1">
+              {SITE.phone1}
+            </a>
           </div>
           <div className="flex flex-col items-center md:items-end gap-1">
             <div className="flex gap-4">

@@ -15,7 +15,7 @@ export default function ContactForm({ variant }: ContactFormProps) {
     setStatus("submitting");
 
     const formData = new FormData(e.currentTarget);
-    formData.append("access_key", SITE.web3formsKey);
+    formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_KEY || SITE.web3formsKey);
 
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
