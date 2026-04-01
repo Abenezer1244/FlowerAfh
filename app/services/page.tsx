@@ -18,7 +18,7 @@ export default function ServicesPage() {
             <span className="text-xs font-medium tracking-widest text-brand-accent uppercase block mb-6">
               [ OUR SERVICES ]
             </span>
-            <h1 className="text-5xl lg:text-7xl tracking-tight leading-[1.05] font-display font-normal mb-8">
+            <h1 className="text-3xl sm:text-5xl lg:text-7xl tracking-tight leading-[1.05] font-display font-normal mb-8">
               Comprehensive care, <br />
               <span className="text-brand-accent">tailored to you.</span>
             </h1>

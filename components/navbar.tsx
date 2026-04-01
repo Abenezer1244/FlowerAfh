@@ -31,7 +31,7 @@ export default function Navbar() {
 
         <button
           onClick={() => setMenuOpen(true)}
-          className="lg:hidden text-sm font-medium tracking-wider uppercase"
+          className="lg:hidden text-sm font-medium tracking-wider uppercase p-2 -m-2"
         >
           MENU
         </button>

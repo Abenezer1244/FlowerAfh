@@ -29,7 +29,7 @@ export default function HomePage() {
       <section className="relative pt-12 pb-24 overflow-hidden z-10">
         <h1
           className="gsap-fade-up-home absolute top-0 w-full text-center tracking-tighter text-brand-dark select-none z-0 mt-8 opacity-10 font-display font-normal"
-          style={{ fontSize: "16vw", lineHeight: "0.8" }}
+          style={{ fontSize: "clamp(3rem, 16vw, 20rem)", lineHeight: "0.8" }}
         >
           FLOWER
         </h1>
@@ -67,14 +67,14 @@ export default function HomePage() {
               </div>
             </GsapFadeUp>
             <GsapFadeUp className="md:col-span-3 text-right">
-              <p className="text-7xl tracking-tight font-display font-normal text-brand-accent">24/7</p>
+              <p className="text-5xl sm:text-7xl tracking-tight font-display font-normal text-brand-accent">24/7</p>
               <p className="text-sm font-medium tracking-wider text-brand-muted uppercase mt-2">Dedicated Care</p>
             </GsapFadeUp>
           </div>
 
           <GsapFadeUp className="flex flex-wrap items-center justify-between gap-8 mt-32 text-xs font-medium tracking-wider text-brand-accent uppercase">
             <p>BEYOND STANDARD ASSISTANCE.</p>
-            <div className="flex gap-4">
+            <div className="hidden sm:flex gap-4">
               <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=320&q=80" alt="Comfortable Detail" className="w-32 h-20 object-cover bg-brand-subtle rounded-sm" />
               <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=320&q=80" alt="Home Environment" className="w-32 h-20 object-cover bg-brand-subtle rounded-sm" />
               <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg" alt="Peaceful Space" className="w-32 h-20 object-cover bg-brand-subtle rounded-sm" />
@@ -173,7 +173,7 @@ export default function HomePage() {
                   We curate specialized care environments that align with specific health requirements. From daily living assistance to advanced memory support, our home adapts to your needs.
                 </p>
               </GsapFadeUp>
-              <GsapFadeUp className="flex flex-col gap-6 text-left w-64 mr-32">
+              <GsapFadeUp className="flex flex-col gap-6 text-left w-full sm:w-64 mr-0 sm:mr-32">
                 <ImageAnim src={EXPERTISE[1].image} alt={EXPERTISE[1].alt} className="w-full h-64" />
                 <div className="flex justify-between text-xs tracking-wider text-brand-muted-dark uppercase font-normal">
                   <span>{EXPERTISE[1].labelLeft}</span>

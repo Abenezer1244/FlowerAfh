@@ -55,18 +55,20 @@ export default function GalleryPage() {
         );
       });
 
-      // Mouse parallax on gallery wrapper
+      // Mouse parallax on gallery wrapper — only on non-touch devices
       const wrapper = wrapperRef.current;
       if (!wrapper) return;
 
-      const handleMouseMove = (e: MouseEvent) => {
-        const xPos = (e.clientX / window.innerWidth - 0.5) * 30;
-        const yPos = (e.clientY / window.innerHeight - 0.5) * 30;
-        gsap.to(wrapper, { x: xPos, y: yPos, duration: 1.5, ease: "power2.out" });
-      };
-
-      window.addEventListener("mousemove", handleMouseMove);
-      return () => window.removeEventListener("mousemove", handleMouseMove);
+      const isTouch = window.matchMedia("(pointer: coarse)").matches;
+      if (!isTouch) {
+        const handleMouseMove = (e: MouseEvent) => {
+          const xPos = (e.clientX / window.innerWidth - 0.5) * 30;
+          const yPos = (e.clientY / window.innerHeight - 0.5) * 30;
+          gsap.to(wrapper, { x: xPos, y: yPos, duration: 1.5, ease: "power2.out" });
+        };
+        window.addEventListener("mousemove", handleMouseMove);
+        return () => window.removeEventListener("mousemove", handleMouseMove);
+      }
     });
 
     return () => ctx.revert();
@@ -81,7 +83,7 @@ export default function GalleryPage() {
             <span className="gsap-hero-gallery text-xs font-medium tracking-widest text-brand-accent uppercase block mb-6">
               [ OUR HOME ]
             </span>
-            <h1 className="gsap-hero-gallery text-5xl lg:text-7xl tracking-tight leading-[1.05] font-display font-normal mb-8">
+            <h1 className="gsap-hero-gallery text-3xl sm:text-5xl lg:text-7xl tracking-tight leading-[1.05] font-display font-normal mb-8">
               Life in <span className="text-brand-accent">vivid detail.</span>
             </h1>
             <p className="gsap-hero-gallery text-base md:text-lg text-brand-muted leading-relaxed max-w-2xl mb-8">

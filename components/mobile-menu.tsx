@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
 import { NAV_LINKS } from "@/lib/constants";
 
@@ -10,6 +11,15 @@ interface MobileMenuProps {
 }
 
 export default function MobileMenu({ isOpen, onClose, pathname }: MobileMenuProps) {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   return (

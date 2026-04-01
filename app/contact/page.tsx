@@ -60,7 +60,7 @@ export default function ContactPage() {
               <span className="gsap-hero-contact text-xs font-medium tracking-widest text-brand-accent uppercase block mb-6">
                 [ GET IN TOUCH ]
               </span>
-              <h1 className="gsap-hero-contact text-6xl lg:text-8xl tracking-tight leading-none font-display font-normal">
+              <h1 className="gsap-hero-contact text-4xl sm:text-6xl lg:text-8xl tracking-tight leading-none font-display font-normal">
                 We&apos;re here <br className="hidden sm:block" />{" "}
                 <span className="text-brand-accent">to help.</span>
               </h1>
@@ -94,7 +94,7 @@ export default function ContactPage() {
                 </span>
                 <a
                   href={`mailto:${SITE.email}`}
-                  className="text-2xl lg:text-3xl tracking-tight font-display font-normal hover:text-brand-accent transition-colors"
+                  className="text-xl sm:text-2xl lg:text-3xl tracking-tight font-display font-normal hover:text-brand-accent transition-colors"
                 >
                   {SITE.email}
                 </a>
@@ -107,7 +107,7 @@ export default function ContactPage() {
                 </span>
                 <a
                   href={`tel:${SITE.phone1.replace(/[^+\d]/g, "")}`}
-                  className="text-2xl lg:text-3xl tracking-tight font-display font-normal hover:text-brand-accent transition-colors"
+                  className="text-xl sm:text-2xl lg:text-3xl tracking-tight font-display font-normal hover:text-brand-accent transition-colors"
                 >
                   {SITE.phone1}
                 </a>
@@ -119,7 +119,7 @@ export default function ContactPage() {
                   <iconify-icon icon="solar:map-point-linear" width="18" height="18" style={{ strokeWidth: "1.5px" }} />
                   Visit Us
                 </span>
-                <p className="text-2xl lg:text-3xl tracking-tight font-display font-normal leading-snug">
+                <p className="text-xl sm:text-2xl lg:text-3xl tracking-tight font-display font-normal leading-snug">
                   605 74th St SW
                   <br />
                   Everett, WA 98203

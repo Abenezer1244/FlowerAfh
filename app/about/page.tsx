@@ -16,7 +16,7 @@ export default function AboutPage() {
               <span className="text-xs font-medium tracking-widest text-brand-accent uppercase block mb-6">
                 [ ABOUT US ]
               </span>
-              <h1 className="text-5xl lg:text-7xl tracking-tight leading-[1.05] font-display font-normal mb-8">
+              <h1 className="text-3xl sm:text-5xl lg:text-7xl tracking-tight leading-[1.05] font-display font-normal mb-8">
                 Redefining care <br />
                 <span className="text-brand-accent">with heart and home.</span>
               </h1>
