@@ -55,6 +55,11 @@ export default function ContactForm({ variant }: ContactFormProps) {
   if (variant === "contact") {
     return (
       <form onSubmit={handleSubmit} className="flex flex-col gap-8">
+        <input type="hidden" name="subject" value="New Contact Form Submission — Flower AFH" />
+        <input type="hidden" name="from_name" value="Flower AFH Website" />
+        <div className="hidden">
+          <input type="checkbox" name="botcheck" />
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <div className="flex flex-col gap-2">
             <label className="text-xs font-medium text-brand-muted uppercase tracking-wider">First Name</label>
@@ -90,6 +95,11 @@ export default function ContactForm({ variant }: ContactFormProps) {
   return (
     <div className="bg-brand-darker rounded-2xl p-8 md:p-10 border border-brand-border-dark">
       <form onSubmit={handleSubmit} className="flex flex-col gap-8">
+        <input type="hidden" name="subject" value="New Tour/Care Inquiry — Flower AFH" />
+        <input type="hidden" name="from_name" value="Flower AFH Website" />
+        <div className="hidden">
+          <input type="checkbox" name="botcheck" />
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex flex-col gap-2 relative">
             <label className="text-xs font-medium tracking-wider text-brand-muted-dark uppercase">Your Name</label>
