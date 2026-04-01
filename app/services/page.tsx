@@ -6,6 +6,10 @@ import {
   CORE_SERVICES,
   SPECIALTIES,
   AMENITIES,
+  ADMISSION_STEPS,
+  PAYMENT_METHODS,
+  CARE_LEVELS,
+  INCLUDED_IN_CARE,
 } from "@/lib/constants";
 
 export default function ServicesPage() {
@@ -200,6 +204,124 @@ export default function ServicesPage() {
               </GsapFadeUp>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Getting Started Section */}
+      <section className="relative bg-brand-bg py-32 z-10 border-b border-brand-border">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
+            <GsapFadeUp className="lg:col-span-5">
+              <span className="text-xs font-medium tracking-widest text-brand-accent uppercase block mb-4">
+                [ GETTING STARTED ]
+              </span>
+              <h2 className="text-4xl md:text-5xl tracking-tight font-display font-normal mb-6">
+                Your path to peace of mind.
+              </h2>
+              <p className="text-sm text-brand-muted leading-relaxed mb-8">
+                We understand that choosing a care home is one of the most important decisions your family will make. Our process is designed to be transparent, supportive, and pressure-free.
+              </p>
+
+              <div className="bg-brand-subtle/60 border border-brand-border rounded-lg p-6">
+                <h3 className="text-lg font-display tracking-tight mb-4">Conditions We Support</h3>
+                <ul className="space-y-2">
+                  {CARE_LEVELS.map((level) => (
+                    <li key={level} className="flex items-start gap-3 text-sm text-brand-muted">
+                      <iconify-icon icon="solar:check-circle-linear" class="text-brand-accent mt-0.5 shrink-0" />
+                      {level}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </GsapFadeUp>
+
+            <div className="lg:col-span-7 space-y-12">
+              {ADMISSION_STEPS.map((step, i) => (
+                <GsapFadeUp
+                  key={step.number}
+                  className={`flex flex-col sm:flex-row gap-6 items-start ${
+                    i < ADMISSION_STEPS.length - 1 ? "pb-12 border-b border-brand-border" : ""
+                  }`}
+                >
+                  <span className="text-3xl tracking-tight font-normal text-brand-accent font-display shrink-0">
+                    {step.number}
+                  </span>
+                  <div>
+                    <h3 className="text-2xl tracking-tight font-display font-normal mb-3">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-brand-muted leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
+                </GsapFadeUp>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing & Payment Section */}
+      <section className="relative bg-brand-dark text-brand-bg py-32 z-10">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <GsapFadeUp className="mb-20 max-w-2xl">
+            <span className="text-xs font-medium tracking-widest text-brand-muted-dark uppercase block mb-4">
+              [ PRICING & PAYMENT ]
+            </span>
+            <h2 className="text-4xl md:text-5xl tracking-tight font-display font-normal mb-6">
+              Transparent, personalized pricing.
+            </h2>
+            <p className="text-sm text-brand-muted-dark leading-relaxed">
+              Every resident&apos;s needs are unique, so we provide customized quotes based on the level of care required. Contact us for a no-obligation consultation and personalized rate.
+            </p>
+          </GsapFadeUp>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+            {PAYMENT_METHODS.map((method) => (
+              <GsapFadeUp
+                key={method.title}
+                className="border border-brand-border-dark rounded-xl p-8 bg-brand-darker/50 hover:bg-brand-darker transition-colors"
+              >
+                <iconify-icon icon={method.icon} width="24" height="24" class="text-brand-accent mb-4 block" style={{ strokeWidth: "1.5px" }} />
+                <h3 className="text-xl tracking-tight font-display font-normal mb-3">
+                  {method.title}
+                </h3>
+                <p className="text-sm text-brand-muted-dark leading-relaxed">
+                  {method.description}
+                </p>
+              </GsapFadeUp>
+            ))}
+          </div>
+
+          <GsapFadeUp className="bg-brand-darker border border-brand-border-dark rounded-xl p-8 md:p-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <div>
+                <h3 className="text-2xl tracking-tight font-display font-normal mb-6">
+                  What&apos;s included in your care
+                </h3>
+                <ul className="space-y-3">
+                  {INCLUDED_IN_CARE.map((item) => (
+                    <li key={item} className="flex items-center gap-3 text-sm text-brand-bg">
+                      <iconify-icon icon="solar:check-circle-linear" class="text-brand-accent shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="flex flex-col justify-center">
+                <p className="text-brand-muted-dark text-sm leading-relaxed mb-6">
+                  Our all-inclusive approach means no surprise charges. The monthly rate covers everything your loved one needs for comfortable, dignified daily living.
+                </p>
+                <a
+                  href="/contact"
+                  className="bg-brand-bg hover:bg-brand-accent hover:text-brand-bg text-brand-dark text-xs font-medium tracking-wider uppercase py-4 px-8 rounded transition-colors w-fit flex items-center gap-2"
+                >
+                  REQUEST A PERSONALIZED QUOTE
+                  <iconify-icon icon="solar:arrow-right-up-linear" width="14" height="14" style={{ strokeWidth: "1.5px" }} />
+                </a>
+              </div>
+            </div>
+          </GsapFadeUp>
         </div>
       </section>
 

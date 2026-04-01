@@ -217,20 +217,31 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {TESTIMONIALS.map((t) => (
-              <GsapFadeUp key={t.name} className="border border-brand-border rounded-xl p-8 bg-brand-subtle/30 flex flex-col justify-between group hover:border-brand-accent transition-colors duration-300">
+              <GsapFadeUp key={t.attribution} className="border border-brand-border rounded-xl p-8 bg-brand-subtle/30 flex flex-col justify-between group hover:border-brand-accent transition-colors duration-300">
                 <div>
                   <iconify-icon icon="solar:quote-right-linear" width="32" height="32" class="text-brand-accent mb-8 opacity-40 group-hover:opacity-100 transition-opacity" style={{ strokeWidth: "1.5px" } as React.CSSProperties} />
                   <p className="text-sm text-brand-muted leading-relaxed mb-10">&ldquo;{t.quote}&rdquo;</p>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 rounded-full bg-brand-border flex items-center justify-center text-brand-dark font-display">{t.initial}</div>
-                  <div>
-                    <p className="text-sm font-medium text-brand-dark">{t.name}</p>
-                    <p className="text-xs uppercase tracking-wider text-brand-accent mt-0.5">{t.role}</p>
-                  </div>
+                  <p className="text-sm font-medium text-brand-dark">{t.attribution}</p>
                 </div>
               </GsapFadeUp>
             ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <p className="text-sm text-brand-muted">
+              Want to hear more from our families?{" "}
+              <a
+                href="https://www.google.com/maps/place/605+74th+St+SW,+Everett,+WA+98203"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand-accent font-medium border-b border-brand-accent/50 hover:border-brand-accent transition-all"
+              >
+                See our Google Reviews
+              </a>
+            </p>
           </div>
         </div>
       </section>
@@ -287,6 +298,30 @@ export default function HomePage() {
             <GsapFadeUp>
               <ContactForm variant="cta" />
             </GsapFadeUp>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Bar */}
+      <section className="relative bg-brand-bg py-16 z-10 border-t border-brand-border">
+        <div className="max-w-5xl mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div className="flex flex-col items-center gap-2">
+              <iconify-icon icon="solar:shield-check-bold" width="32" height="32" class="text-brand-accent" />
+              <p className="text-sm font-medium text-brand-dark">WA State DSHS Licensed</p>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <iconify-icon icon="solar:clock-circle-bold" width="32" height="32" class="text-brand-accent" />
+              <p className="text-sm font-medium text-brand-dark">24/7 Care Available</p>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <iconify-icon icon="solar:home-smile-bold" width="32" height="32" class="text-brand-accent" />
+              <p className="text-sm font-medium text-brand-dark">Up to 6 Residents</p>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <iconify-icon icon="solar:heart-pulse-bold" width="32" height="32" class="text-brand-accent" />
+              <p className="text-sm font-medium text-brand-dark">Serving Since 2020</p>
+            </div>
           </div>
         </div>
       </section>
