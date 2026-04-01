@@ -107,7 +107,6 @@ export default function ServicesPage() {
                 key={service.title}
                 className="bg-white/40 border border-brand-border p-8 rounded-sm hover:bg-white/60 transition-colors"
               >
-                {/* @ts-expect-error — Iconify web component */}
                 <iconify-icon icon={service.icon} width="24" height="24" class="text-brand-accent mb-6 block" style={{ strokeWidth: "1.5px" }} />
                 <h3 className="text-xl tracking-tight font-display font-normal mb-3">
                   {service.title}
@@ -152,7 +151,6 @@ export default function ServicesPage() {
                 <ul className="space-y-3 mt-auto">
                   {s.features.map((f) => (
                     <li key={f} className="flex items-center gap-3 text-xs text-brand-bg">
-                      {/* @ts-expect-error — Iconify web component */}
                       <iconify-icon icon="solar:check-circle-linear" class="text-brand-accent" />
                       {f}
                     </li>
@@ -162,7 +160,6 @@ export default function ServicesPage() {
             ))}
           </div>
         </div>
-        {/* @ts-expect-error — Iconify web component */}
         <iconify-icon icon="solar:medical-kit-linear" width="400" height="400" class="absolute -left-32 -top-32 text-brand-bg opacity-[0.02] pointer-events-none" style={{ strokeWidth: "1px" }} />
       </section>
 
@@ -191,7 +188,6 @@ export default function ServicesPage() {
               >
                 <div className="flex items-center gap-6">
                   <div className="w-12 h-12 flex items-center justify-center bg-brand-subtle rounded-full text-brand-dark">
-                    {/* @ts-expect-error — Iconify web component */}
                     <iconify-icon icon={a.icon} width="24" height="24" style={{ strokeWidth: "1.5px" }} />
                   </div>
                   <h3 className="text-xl tracking-tight font-display font-normal">
@@ -210,7 +206,6 @@ export default function ServicesPage() {
       {/* Philosophy Quote Section */}
       <section className="relative bg-brand-accent text-brand-bg py-32 z-10 overflow-hidden">
         <div className="max-w-5xl mx-auto px-6 lg:px-12 text-center relative z-10">
-          {/* @ts-expect-error — Iconify web component */}
           <iconify-icon icon="solar:quote-left-linear" width="48" height="48" class="text-brand-bg/30 mb-8 inline-block" style={{ strokeWidth: "1.5px" }} />
           <h2 className="text-3xl md:text-5xl lg:text-6xl tracking-tight leading-[1.15] font-display font-normal mb-8">
             Care is not merely a service we provide; it is the environment we

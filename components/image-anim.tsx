@@ -29,7 +29,7 @@ export default function ImageAnim({ src, alt, className = "" }: ImageAnimProps) 
         const left = (i / cols) * 100;
         const right = 100 - ((i + 1) / cols) * 100;
         wrapper.style.clipPath = `inset(0 ${right}% 0 ${left}%)`;
-        wrapper.style.webkitClipPath = `inset(0 ${right}% 0 ${left}%)`;
+        (wrapper.style as unknown as Record<string, string>).webkitClipPath = `inset(0 ${right}% 0 ${left}%)`;
 
         const innerImg = document.createElement("img");
         innerImg.src = src;

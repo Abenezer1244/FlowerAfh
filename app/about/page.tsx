@@ -80,7 +80,6 @@ export default function AboutPage() {
             </GsapFadeUp>
           </div>
         </div>
-        {/* @ts-expect-error — Iconify web component */}
         <iconify-icon icon="solar:stars-linear" width="400" height="400" class="absolute -right-32 -bottom-32 text-brand-bg opacity-[0.02] pointer-events-none" style={{ strokeWidth: "1px" }} />
       </section>
 

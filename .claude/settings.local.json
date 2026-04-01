@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash:*)",
+      "Bash(npx create-next-app@14 temp-next --typescript --tailwind --eslint --app --src-dir=false --import-alias=\"@/*\" --use-npm)",
+      "Bash(rm -rf temp-next)",
+      "Bash(npx create-next-app@14 temp-next --ts --tailwind --eslint --app --no-src-dir --import-alias=\"@/*\" --use-npm)",
+      "Bash(cp -r temp-next/node_modules .)",
+      "Bash(cp temp-next/package.json temp-next/package-lock.json temp-next/tsconfig.json temp-next/next-env.d.ts temp-next/postcss.config.mjs .)",
+      "Bash(cp -r temp-next/app .)",
+      "Bash(cp \"temp-next/package.json\" .)",
+      "Bash(cp \"temp-next/package-lock.json\" .)",
+      "Bash(cp \"temp-next/tsconfig.json\" .)",
+      "Bash(cp \"temp-next/next-env.d.ts\" .)",
+      "Bash(cp \"temp-next/postcss.config.mjs\" .)",
+      "Bash(rm:*)",
+      "Bash(npm install:*)",
+      "Bash(npx next:*)",
+      "Bash(rm -rf .next)",
+      "Bash(npm run:*)",
+      "Bash(sed:*)"
+    ]
+  }
+}

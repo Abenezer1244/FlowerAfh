@@ -89,7 +89,6 @@ export default function ContactPage() {
             <GsapFadeUp className="flex flex-col justify-center gap-12 lg:pl-16 lg:border-l border-brand-border">
               <div>
                 <span className="text-xs font-medium tracking-widest text-brand-accent uppercase mb-3 flex items-center gap-2">
-                  {/* @ts-expect-error — Iconify web component */}
                   <iconify-icon icon="solar:letter-linear" width="18" height="18" style={{ strokeWidth: "1.5px" }} />
                   Email Us
                 </span>
@@ -103,7 +102,6 @@ export default function ContactPage() {
 
               <div>
                 <span className="text-xs font-medium tracking-widest text-brand-accent uppercase mb-3 flex items-center gap-2">
-                  {/* @ts-expect-error — Iconify web component */}
                   <iconify-icon icon="solar:phone-linear" width="18" height="18" style={{ strokeWidth: "1.5px" }} />
                   Call Us
                 </span>
@@ -118,7 +116,6 @@ export default function ContactPage() {
 
               <div>
                 <span className="text-xs font-medium tracking-widest text-brand-accent uppercase mb-3 flex items-center gap-2">
-                  {/* @ts-expect-error — Iconify web component */}
                   <iconify-icon icon="solar:map-point-linear" width="18" height="18" style={{ strokeWidth: "1.5px" }} />
                   Visit Us
                 </span>
